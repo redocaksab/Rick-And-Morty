@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Navbar from './Navbar/Navbar';
+import { Route } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import CharactersContainer from './CharactersPage/CharactersContainer';
+import EpisodesContainer from './EpisodesPage/EpisodesContainer';
+import LocationsContainer from './LocationPage/LocationContainer';
+import WatchListContainer from './MyWatchListPage/WatchListContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Provider store={store}>
+      <div className="app-wrapper">
+        <Navbar />
+        <Route  path="/characters" component={CharactersContainer}/>
+        <Route  path="/episodes" component={EpisodesContainer}/>
+        <Route path="/locations" component={LocationsContainer}/>
+        <Route path="/watchList" component={WatchListContainer}/>
+      </div>
+      </Provider>
+    </BrowserRouter>
+
   );
 }
 

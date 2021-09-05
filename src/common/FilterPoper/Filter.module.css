@@ -1,0 +1,37 @@
+.popup {
+    display: inline-block;
+    position: relative;
+}
+.divPopup {
+    position: absolute;
+    left: -53px;
+  
+    text-align: center;
+}
+.buttonFilter {
+    display: inline-block;
+    width: 120px;
+    margin: 10px 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #272d3a;
+    border-radius: 8px;
+    background: #272d3a;
+    transition: .2s ease-in-out;
+    color: #0aafc4;
+    text-shadow: 1.2px 1.2px 3px #c4d661;
+}
+
+.buttonFilter:hover {
+    background: #1f232e;
+}
+
+
+.itemFilter {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.itemFilter:hover{
+    background: #dee0e0;
+}

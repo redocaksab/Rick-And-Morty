@@ -1,0 +1,10 @@
+.listForm input{
+    display: inline-block;
+   width: 400px;
+   padding: 0 15px;
+   border-width: 0;
+   line-height: 40px;
+   border-radius: 20px;
+   color: white;
+   background: #333b4d;
+}

@@ -1,0 +1,50 @@
+.topMenu {
+    background: #272d3a;
+    box-shadow: 3px 0 7px rgba(219, 218, 218, 0.3);
+    border-radius: 12px;
+    padding: 7px;
+  }
+.topMenu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.navbarLogo {display: inline-block;}
+.menuMain {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+.menuMain li {display: inline-block;}
+.menuMain a {
+ text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #0aafc4;
+  text-shadow: 1.2px 1.2px 3px #c4d661;
+  transition:.3s linear;
+  }
+
+
+@media (max-width: 660px) {
+.menuMain {
+ float: none;
+ padding-top: 20px;
+}
+.topMenu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menuMain a {padding: 0 10px;}
+.menuMain a:before {transform: rotate(45deg) translateX(-6px);}
+}
+  @media (max-width: 600px) {
+  .menuMain li {display: block;}
+  }
